@@ -1,0 +1,125 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 12px;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover { color: #66ccff; }
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #66ccff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  color: #ffcc66;
+}
+
+.ejercicio {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 650px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.fraccion {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.linea {
+  border-top: 2px solid #f0f0f0;
+  margin: 5px 0;
+}
+
+.signo {
+  font-size: 1.8em;
+  margin: 0 12px;
+  color: #66ccff;
+}
+
+input, button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  margin: 5px;
+  font-size: 1em;
+}
+
+input {
+  width: 70px;
+  text-align: center;
+  background: #222;
+  color: #f0f0f0;
+}
+
+button {
+  background: #66ccff;
+  color: #111;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover { background: #3399cc; }
+
+.botones {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Ya tienes estilos generales, solo aseguramos que botones y .ejercicio se vean igual */
+.correcto {
+  background: #00cc66 !important;
+  color: #fff;
+}
+
+.incorrecto {
+  background: #cc3333 !important;
+  color: #fff;
+}

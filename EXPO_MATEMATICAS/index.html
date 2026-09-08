@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exposición de Matemáticas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#saludo">SALUDO</a>
+      <a href="#trabajo1">TRABAJO_1</a>
+      <a href="#trabajo2">TRABAJO_2</a>
+      <a href="#trabajo3">TRABAJO_3</a>
+    </nav>
+  </header>
+
+  <section id="saludo">
+    <h1>WELCOME</h1>
+    <p>Trabajo de Matemáticas<br>Presentado por: Juan Pablo Duran</p>
+  </section>
+
+  <!-- Ejercicio de fracciones -->
+  <section id="trabajo1">
+    <h2>Operaciones con Fracciones</h2>
+    <div class="ejercicio">
+      <!-- Aquí va tu ejercicio de fracciones -->
+      <div class="operacion">
+        <div class="fraccion">
+          <input type="number" id="num1" placeholder="Num 1">
+          <div class="linea"></div>
+          <input type="number" id="den1" placeholder="Den 1">
+        </div>
+
+        <span id="operador" class="signo">?</span>
+
+        <div class="fraccion">
+          <input type="number" id="num2" placeholder="Num 2">
+          <div class="linea"></div>
+          <input type="number" id="den2" placeholder="Den 2">
+        </div>
+
+        <div class="botones">
+          <button id="sumar">Sumar</button>
+          <button id="restar">Restar</button>
+          <button id="multiplicar">Multiplicar</button>
+          <button id="dividir">Dividir</button>
+        </div>
+
+        <div id="resultado" class="operacion"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ejercicio de ecuaciones -->
+  <section id="trabajo2">
+    <h2>Resolver Ecuación</h2>
+    <div class="ejercicio">
+      <p id="pregunta"></p>
+      <div id="opciones"></div>
+    </div>
+  </section>
+
+  <section id="trabajo3">
+    <h2>Ejercicio 3</h2>
+    <div class="ejercicio">
+      <p>Aquí puedes pegar otro ejercicio en HTML/CSS.</p>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+  <script src="ecuacion.js" defer></script>
+</body>
+</html>
