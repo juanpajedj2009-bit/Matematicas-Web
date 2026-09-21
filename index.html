@@ -80,14 +80,10 @@
         <div class="ejercicio">
             <p>Aquí puedes insertar un video explicativo:</p>
 
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/VIDEO_ID"
-                title="Video de ejemplo"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
+            <video width="560" height="315" controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+            </video>
 
         </div>
     </section>
@@ -111,10 +107,9 @@
             <div style="display: flex; gap: 20px; margin-top: 15px;">
 
                 <div id="inputs"></div>
-
                 <div id="figuraDibujo"></div>
 
-            </div>
+            </div>  
 
             <button id="calcular">Calcular</button>
 
@@ -124,9 +119,8 @@
     </section>
 
     <script src="script.js" defer></script>
-  
 
 </body>
 
 </html>
-
+```
